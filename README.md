@@ -9,6 +9,7 @@
 | AhMyth | 1500 | Trojan |
 | AndroidRAT | 1500 | Trojan |
 | AndroidTester | 1500 | Trojan |
+| DroidJack | 1500 | Trojan |
 | HawkShaw | 1500 | Trojan |
 | SpyMax | 1500 | Trojan |
 
