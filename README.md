@@ -13,13 +13,14 @@
 | DroidJack | 1500 | Trojan |
 | HawkShaw | 1500 | Trojan |
 | SpyMax | 1500 | Trojan |
-
-
-| Name | Row | Label |
-| ---------- | ---------- | ---------- |
 | Google | 1500 | Benign |
 | Facebook | 1500 | Benign |
 | Twitter | 1500 | Benign |
+
+
+| Name | Row |
+| ---------- | ---------- |
+| Benign & Trojan | 18000 |
 
 # DATA SET 2
 | Name | Row | Label |
@@ -30,13 +31,13 @@
 | DroidJack | 300 | Trojan |
 | HawkShaw | 300 | Trojan |
 | SpyMax | 300 | Trojan |
-
-
-| Name | Row | Label |
-| ---------- | ---------- | ---------- |
 | Google | 300 | Benign |
 | Facebook | 300 | Benign |
 | Twitter | 300 | Benign |
+
+| Name | Row |
+| ---------- | ---------- |
+| Benign & Trojan | 3600 |
 
 # Source Original Dataset
 Name : Android Mischief Dataset v1<br>
