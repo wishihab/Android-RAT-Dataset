@@ -40,6 +40,12 @@ balancing
 | ---------- | ---------- |
 | Benign & Trojan | 3600 |
 
+
+# Machine Learning Algorithm Plan
+1. Decision Tree
+2. Random Forest
+3. Naive Bayes
+
 # Source Original Dataset
 Name : Android Mischief Dataset v1<br>
 Author : <b>Kamila Babayeva</b>, Stratosphere Laboratory<br>
