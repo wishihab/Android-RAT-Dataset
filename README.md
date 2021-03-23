@@ -2,7 +2,7 @@
 <h4 align="center">This repo contains all dataset for my research/analysis about : <br>
 "DETEKSI REMOTE ACCESS TROJAN PADA ANDROID BERBASIS PENGAMATAN LALU LINTAS JARINGAN <br> MENGGUNAKAN MACHINE LEARNING." </h4>
 
----tobecontinue
+---on going.....
 
 # DATA SET 1
 | Name | Row | Label |
