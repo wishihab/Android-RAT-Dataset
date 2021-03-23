@@ -15,7 +15,7 @@
       <operator activated="true" class="retrieve" compatibility="9.8.001" expanded="true" height="68" name="Retrieve benign_trojan_18000_model_1_transformed" width="90" x="45" y="34">
         <parameter key="repository_entry" value="../data/benign_trojan_18000_model_1_transformed"/>
       </operator>
-      <operator activated="true" class="split_data" compatibility="9.8.001" expanded="true" height="103" name="Split Data" width="90" x="112" y="136">
+      <operator activated="true" class="split_data" compatibility="9.8.001" expanded="true" height="103" name="Split Data" width="90" x="179" y="34">
         <enumeration key="partitions">
           <parameter key="ratio" value="0.8"/>
           <parameter key="ratio" value="0.2"/>
@@ -29,27 +29,27 @@
         <parameter key="target_role" value="label"/>
         <list key="set_additional_roles"/>
       </operator>
-      <operator activated="true" class="concurrency:parallel_decision_tree" compatibility="9.8.001" expanded="true" height="103" name="Decision Tree" width="90" x="447" y="187">
-        <parameter key="criterion" value="gain_ratio"/>
+      <operator activated="true" class="concurrency:parallel_decision_tree" compatibility="9.8.001" expanded="true" height="103" name="Decision Tree" width="90" x="447" y="34">
+        <parameter key="criterion" value="information_gain"/>
         <parameter key="maximal_depth" value="10"/>
-        <parameter key="apply_pruning" value="true"/>
+        <parameter key="apply_pruning" value="false"/>
         <parameter key="confidence" value="0.1"/>
         <parameter key="apply_prepruning" value="true"/>
         <parameter key="minimal_gain" value="0.01"/>
         <parameter key="minimal_leaf_size" value="2"/>
         <parameter key="minimal_size_for_split" value="4"/>
-        <parameter key="number_of_prepruning_alternatives" value="3"/>
+        <parameter key="number_of_prepruning_alternatives" value="0"/>
       </operator>
-      <operator activated="true" class="apply_model" compatibility="9.8.001" expanded="true" height="82" name="Apply Model" width="90" x="514" y="340">
+      <operator activated="true" class="apply_model" compatibility="9.8.001" expanded="true" height="82" name="Apply Model" width="90" x="447" y="340">
         <list key="application_parameters"/>
         <parameter key="create_view" value="false"/>
       </operator>
-      <operator activated="true" class="set_role" compatibility="9.8.001" expanded="true" height="82" name="Set Role (2)" width="90" x="648" y="136">
+      <operator activated="true" class="set_role" compatibility="9.8.001" expanded="true" height="82" name="Set Role (2)" width="90" x="581" y="85">
         <parameter key="attribute_name" value="Label"/>
         <parameter key="target_role" value="label"/>
         <list key="set_additional_roles"/>
       </operator>
-      <operator activated="true" class="performance_classification" compatibility="9.8.001" expanded="true" height="82" name="Performance" width="90" x="782" y="289">
+      <operator activated="true" class="performance_classification" compatibility="9.8.001" expanded="true" height="82" name="Performance" width="90" x="782" y="187">
         <parameter key="main_criterion" value="first"/>
         <parameter key="accuracy" value="true"/>
         <parameter key="classification_error" value="false"/>
