@@ -13,9 +13,9 @@
 | DroidJack | 1500 | Trojan |
 | HawkShaw | 1500 | Trojan |
 | SpyMax | 1500 | Trojan |
-| Google | 1500x2 | Benign |
-| Facebook | 1500x2 | Benign |
-| Twitter | 1500x2 | Benign |
+| Google | 3000 | Benign |
+| Facebook | 3000 | Benign |
+| Twitter | 3000 | Benign |
 
 balancing
 | Name | Row |
@@ -31,9 +31,9 @@ balancing
 | DroidJack | 75 | Trojan |
 | HawkShaw | 75 | Trojan |
 | SpyMax | 75 | Trojan |
-| Google | 75x2 | Benign |
-| Facebook | 75x2 | Benign |
-| Twitter | 75x2 | Benign |
+| Google | 150 | Benign |
+| Facebook | 150 | Benign |
+| Twitter | 150 | Benign |
 
 balancing
 | Name | Row |
