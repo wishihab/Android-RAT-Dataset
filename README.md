@@ -25,20 +25,20 @@ balancing
 # DATA SET 2
 | Name | Row | Label |
 | ---------- | ---------- | ---------- |
-| AhMyth | 300 | Trojan |
-| AndroidRAT | 300 | Trojan |
-| AndroidTester | 300 | Trojan |
-| DroidJack | 300 | Trojan |
-| HawkShaw | 300 | Trojan |
-| SpyMax | 300 | Trojan |
-| Google | 300 | Benign |
-| Facebook | 300 | Benign |
-| Twitter | 300 | Benign |
+| AhMyth | 75 | Trojan |
+| AndroidRAT | 75 | Trojan |
+| AndroidTester | 75 | Trojan |
+| DroidJack | 75 | Trojan |
+| HawkShaw | 75 | Trojan |
+| SpyMax | 75 | Trojan |
+| Google | 75 | Benign |
+| Facebook | 75 | Benign |
+| Twitter | 75 | Benign |
 
 balancing
 | Name | Row |
 | ---------- | ---------- |
-| Benign & Trojan | 3600 |
+| Benign & Trojan | 900 |
 
 
 # Machine Learning Algorithm Plan
