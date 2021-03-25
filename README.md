@@ -16,11 +16,8 @@
 | Google | 3000 | Benign |
 | Facebook | 3000 | Benign |
 | Twitter | 3000 | Benign |
+| Total | 18000 |  |
 
-balancing
-| Name | Row |
-| ---------- | ---------- |
-| Benign & Trojan | 18000 |
 
 # DATA SET 2
 | Name | Row | Label |
@@ -34,11 +31,7 @@ balancing
 | Google | 150 | Benign |
 | Facebook | 150 | Benign |
 | Twitter | 150 | Benign |
-
-balancing
-| Name | Row |
-| ---------- | ---------- |
-| Benign & Trojan | 900 |
+| Total | 900 |  |
 
 
 # Machine Learning Algorithm Plan
