@@ -12,27 +12,21 @@
     <parameter key="process_duration_for_mail" value="30"/>
     <parameter key="encoding" value="SYSTEM"/>
     <process expanded="true">
-      <operator activated="true" class="retrieve" compatibility="9.8.001" expanded="true" height="68" name="Retrieve benign_trojan_18000_model_1_transformed" width="90" x="45" y="34">
-        <parameter key="repository_entry" value="../data/benign_trojan_18000_model_1_transformed"/>
+      <operator activated="true" class="retrieve" compatibility="9.8.001" expanded="true" height="68" name="Retrieve training" width="90" x="45" y="34">
+        <parameter key="repository_entry" value="../data/training"/>
       </operator>
-      <operator activated="true" class="split_data" compatibility="9.8.001" expanded="true" height="103" name="Split Data" width="90" x="112" y="238">
-        <enumeration key="partitions">
-          <parameter key="ratio" value="0.8"/>
-          <parameter key="ratio" value="0.2"/>
-        </enumeration>
-        <parameter key="sampling_type" value="automatic"/>
-        <parameter key="use_local_random_seed" value="false"/>
-        <parameter key="local_random_seed" value="1992"/>
-      </operator>
-      <operator activated="true" class="set_role" compatibility="9.8.001" expanded="true" height="82" name="Set Role" width="90" x="246" y="187">
+      <operator activated="true" class="set_role" compatibility="9.8.001" expanded="true" height="82" name="Set Role" width="90" x="179" y="34">
         <parameter key="attribute_name" value="Label"/>
         <parameter key="target_role" value="label"/>
         <list key="set_additional_roles"/>
       </operator>
-      <operator activated="true" class="naive_bayes" compatibility="9.8.001" expanded="true" height="82" name="Naive Bayes" width="90" x="380" y="187">
+      <operator activated="true" class="naive_bayes" compatibility="9.8.001" expanded="true" height="82" name="Naive Bayes" width="90" x="380" y="34">
         <parameter key="laplace_correction" value="true"/>
       </operator>
-      <operator activated="true" class="apply_model" compatibility="9.8.001" expanded="true" height="82" name="Apply Model" width="90" x="514" y="289">
+      <operator activated="true" class="retrieve" compatibility="9.8.001" expanded="true" height="68" name="Retrieve testing" width="90" x="45" y="289">
+        <parameter key="repository_entry" value="../data/testing"/>
+      </operator>
+      <operator activated="true" class="apply_model" compatibility="9.8.001" expanded="true" height="82" name="Apply Model" width="90" x="380" y="238">
         <list key="application_parameters"/>
         <parameter key="create_view" value="false"/>
       </operator>
@@ -68,11 +62,10 @@
         <parameter key="use_example_weights" value="true"/>
         <list key="class_weights"/>
       </operator>
-      <connect from_op="Retrieve benign_trojan_18000_model_1_transformed" from_port="output" to_op="Split Data" to_port="example set"/>
-      <connect from_op="Split Data" from_port="partition 1" to_op="Set Role" to_port="example set input"/>
-      <connect from_op="Split Data" from_port="partition 2" to_op="Apply Model" to_port="unlabelled data"/>
+      <connect from_op="Retrieve training" from_port="output" to_op="Set Role" to_port="example set input"/>
       <connect from_op="Set Role" from_port="example set output" to_op="Naive Bayes" to_port="training set"/>
       <connect from_op="Naive Bayes" from_port="model" to_op="Apply Model" to_port="model"/>
+      <connect from_op="Retrieve testing" from_port="output" to_op="Apply Model" to_port="unlabelled data"/>
       <connect from_op="Apply Model" from_port="labelled data" to_op="Set Role (2)" to_port="example set input"/>
       <connect from_op="Apply Model" from_port="model" to_port="result 2"/>
       <connect from_op="Set Role (2)" from_port="example set output" to_op="Performance" to_port="labelled data"/>
