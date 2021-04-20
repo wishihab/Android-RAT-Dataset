@@ -33,6 +33,7 @@
 | Twitter | 150 | Benign |
 | Total | 900 |  |
 
+*note : raw/original dataset contains more row perpcap rat
 
 # Machine Learning Algorithm Plan
 1. Decision Tree
