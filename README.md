@@ -4,34 +4,40 @@
 
 ---on going.....
 
-# DATA SET 1
-| Name | Row | Label |
-| ---------- | ---------- | ---------- |
-| AhMyth | 1500 | Trojan |
-| AndroidRAT | 1500 | Trojan |
-| AndroidTester | 1500 | Trojan |
-| DroidJack | 1500 | Trojan |
-| HawkShaw | 1500 | Trojan |
-| SpyMax | 1500 | Trojan |
-| Google | 3000 | Benign |
-| Facebook | 3000 | Benign |
-| Twitter | 3000 | Benign |
-| Total | 18000 |  |
+# Apps Name
+| Name | Label |
+| ---------- | ---------- |
+| AhMyth | Trojan |
+| AndroidRAT | Trojan |
+| AndroidTester | Trojan |
+| DroidJack | Trojan |
+| HawkShaw | Trojan |
+| SpyMax | Trojan |
+| Google | Benign |
+| Facebook | Benign |
+| Twitter | Benign |
+
+# DATA SET 1 FEATURES
+| Name | Desc |
+| ----------- | ------------ |
+| Source |  |
+| Destination |  |
+| Protocol |  |
+| Length |  |
+| Type |  |
+| Duration |  |
 
 
-# DATA SET 2
-| Name | Row | Label |
-| ---------- | ---------- | ---------- |
-| AhMyth | 75 | Trojan |
-| AndroidRAT | 75 | Trojan |
-| AndroidTester | 75 | Trojan |
-| DroidJack | 75 | Trojan |
-| HawkShaw | 75 | Trojan |
-| SpyMax | 75 | Trojan |
-| Google | 150 | Benign |
-| Facebook | 150 | Benign |
-| Twitter | 150 | Benign |
-| Total | 900 |  |
+# DATA SET 2 FEATURES
+| Name | Desc |
+| ------------- | ------------ |
+| Total Length Out |  |
+| Total Length In |  |
+| Avg Packet Length Out |  |
+| Avg Packet Length In |  |
+| Avg Duration Out |  |
+| Avg Duration In |  |
+| Total Duration |  |
 
 *note : raw/original dataset contains more row perpcap rat
 
@@ -39,6 +45,13 @@
 1. Decision Tree
 2. Random Forest
 3. Naive Bayes
+
+# Dataset
+|  | Dataset 1 | Dataset 2 |
+| ---------- | ---------- | ---------- |
+| Training | 14400 | 5400 |
+| Testing | 3600 | 600 |
+| Total | 18000 | 6000 |
 
 # Source Original Dataset
 Name : Android Mischief Dataset v1<br>
