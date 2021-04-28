@@ -27,7 +27,6 @@
 | Type |  |
 | Duration |  |
 
-
 # DATA SET 2 FEATURES
 | Name | Desc |
 | ------------- | ------------ |
@@ -39,7 +38,6 @@
 | Avg Duration In |  |
 | Total Duration |  |
 
-*note : raw/original dataset contains more row perpcap rat
 
 # Machine Learning Algorithm Plan
 1. Decision Tree
@@ -52,6 +50,9 @@
 | Training | 14400 | 5400 |
 | Testing | 3600 | 600 |
 | Total | 18000 | 6000 |
+
+*note : raw/original dataset contains more row perpcap rat
+
 
 # Source Original Dataset
 Name : Android Mischief Dataset v1<br>
