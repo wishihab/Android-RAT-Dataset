@@ -38,21 +38,29 @@
 | Avg Duration In | The average duration required by incoming packets from 20 mixed packets (Second) |
 | Total Duration | The total duration required by 20 mixed packets (Second) |
 
-
-# Machine Learning Algorithm Plan
-1. Decision Tree
-2. Random Forest
-3. Naive Bayes
-
 # Dataset
 |  | Dataset 1 | Dataset 2 |
-| ---------- | ---------- | ---------- |
+| ----- | ---- | ---- |
 | Training | 14400 | 5400 |
 | Testing | 3600 | 600 |
 | Total | 18000 | 6000 |
 
 *note : raw/original dataset contains more row perpcap rat
 
+# Accuracy and Machine Learning Algorithm Used
+| Dataset 1 | Decision Tree | Random Forest | Naive Bayes |
+| ------------ | ---------- | ---------- | ---------- |
+| N900 - RAT90 | 0.9989 | 0.9990 | 0.1181 |
+| N1800 - RAT90 | 0.9994 | 0.9989 | 0.756 |
+| N1800 - RAT1800 | 0.9997 | 0.9997 | 0.4691 |
+
+| Dataset 2 | Decision Tree | Random Forest | Naive Bayes |
+| ------------ | ---------- | ---------- | ---------- |
+| N150 - RAT10 | 0.873 | 0.933 | 0.513 |
+| N300 - RAT10 | 0.883 | 0.929 | 0.545 |
+| N300 - RAT300 | 0.90 | 0.928 | 0.71 |
+
+*note : accuracy based on jupyter python result
 
 # Source Original Dataset
 Name : Android Mischief Dataset v1<br>
