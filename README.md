@@ -51,7 +51,7 @@
 | Dataset 1 | Decision Tree | Random Forest | Naive Bayes |
 | ------------ | ---------- | ---------- | ---------- |
 | N900 - RAT90 | 0.9989 | 0.9990 | 0.1181 |
-| N1800 - RAT90 | 0.9994 | 0.9989 | 0.756 |
+| N1800 - RAT90 | 0.9994 | 0.9989 | 0.0756 |
 | N1800 - RAT1800 | 0.9997 | 0.9997 | 0.4691 |
 
 | Dataset 2 | Decision Tree | Random Forest | Naive Bayes |
