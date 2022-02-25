@@ -65,3 +65,6 @@ Name : Android Mischief Dataset v1<br>
 Author : <b>Kamila Babayeva</b>, Stratosphere Laboratory<br>
 Date : November 18th 2020<br>
 URL : https://www.stratosphereips.org/android-mischief-dataset
+
+# Looking for Android Remote Access Trojan ?
+URL : https://github.com/wishihab/Android-RATList
